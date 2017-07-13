@@ -6,7 +6,7 @@ from dask_ec2.exceptions import RetriesExceededException
 logger = logging.getLogger(__name__)
 
 
-def retry(retries=10, wait=5, catch=None):
+def retry(retries=10, wait=60, catch=None):
     """
     Decorator to retry on exceptions raised
     """
